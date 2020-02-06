@@ -1,0 +1,54 @@
+.error-403 {
+    background-image: url("../images/error/403-yellow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+.error-404 {
+    background-image: url("../images/error/404-yellow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+.error-500 {
+    background-image: url("../images/error/500-yellow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+.error-503 {
+    background-image: url("../images/error/503-yellow.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+}
+.dinosaur_loader {
+    content:url("../images/dinosaur_loader.gif");
+}
+.egg_loader {
+    content:url("../images/egg_loader.gif");
+}
+
+input[type="text"].calendar {
+    background: #fff url("../images/icon_calendar.png") right center no-repeat;
+    height: 26px;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+}
+readonlyCalendarBg {
+    background: #efefef url("../images/icon_calendar_disabled.png") right center no-repeat !important;
+    pointer-events: none;
+}

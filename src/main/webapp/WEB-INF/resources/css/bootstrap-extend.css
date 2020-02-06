@@ -1,0 +1,411 @@
+/**
+extent các class có sẵn của bootstrap
+ */
+/* ui-dialog */
+.ui-dialog {
+    z-index: 101;
+}
+.ui-dialog > div {
+    padding: 0.7rem 1rem 0.7rem !important;
+}
+.ui-dialog-buttonpane {
+    border-top: none !important;
+}
+.ui-dialog-buttonset > button {
+    min-width: 60px;
+    padding: 3px 12px;
+    margin-right: 8px;
+}
+.ui-widget-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #aaaaaa;
+    opacity: .3;
+    filter: Alpha(Opacity=30);
+}
+.modal-primary .modal-header{
+    background-color:#3e8ef7;
+}
+.modal-warning .modal-header{
+    background-color:#eb6709;
+}
+.modal-danger .modal-header{
+    background-color:#ff4c52;
+}
+
+/* breadcrumb */
+.breadcrumb .is-hidden {
+  display: none;
+}
+.breadcrumb-ellipsis {
+  display: inline-block;
+}
+.breadcrumb-dropdown {
+  display: inline-block;
+}
+.breadcrumb.breadcrumb-right > li.breadcrumb-ellipsis.is-hidden + li:before {
+  display: none;
+}
+.breadcrumb.breadcrumb-left .breadcrumb-dropdown, .breadcrumb.breadcrumb-left .breadcrumb-ellipsis {
+  float: left;
+}
+
+.breadcrumb-item + .breadcrumb-item:before {
+  padding: 0 5px;
+  color: #107be8 !important;
+}
+.breadcrumb-item {
+  color: #107be8 !important;
+}
+.breadcrumb-item:last-child {
+  font-weight: bold;
+  color: #333333 !important;
+}
+
+.breadcrumb-item .icon {
+  text-decoration: none;
+}
+.breadcrumb-item .icon:before {
+  margin-right: 10px;
+}
+
+.breadcrumb-arrow > .breadcrumb-item + .breadcrumb-item:before {
+  content: "» ";
+}
+
+/* padding */
+.padding-0 {
+    padding: 0 !important;
+}
+.padding-1 {
+    padding: 1px !important;
+}
+.padding-2 {
+    padding: 2px !important;
+}
+.padding-3 {
+    padding: 3px !important;
+}
+.padding-4 {
+    padding: 4px !important;
+}
+.padding-5 {
+    padding: 5px !important;
+}
+.padding-10 {
+    padding: 10px !important;
+}
+.pdt-4 {
+    padding-top: 4px !important;
+}
+.pdt-8 {
+    padding-top: 8px !important;
+}
+/* margin */
+.mg-0{
+    margin: 0 !important;
+}
+.mg-1{
+    margin: 5px !important;
+}
+.mg-2{
+    margin: 5px !important;
+}
+.mg-3{
+    margin: 5px !important;
+}
+.mg-4{
+    margin: 5px !important;
+}
+.mg-5{
+    margin: 5px !important;
+}
+.mg-10{
+    margin: 10px !important;
+}
+
+/*frame*/
+.frame-content {
+    height: calc(100vh - (113px)) !important;
+    overflow-y: auto;
+}
+.frame-footer {
+    border-bottom-right-radius: .214rem;
+    border-bottom-left-radius: .214rem;
+    padding: 0 30px 15px;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+}
+.content-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*panel*/
+.panel>.panel-heading {
+    position: relative;
+    border-bottom: 1px solid #e4eaec;
+}
+.panel-title {
+    display: block;
+    color: #37474f;
+}
+.panel-title > i {
+    color: #006DAA;
+    padding-right: 5px;
+}
+.panel-actions {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin: auto;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+}
+.panel-body {
+    padding: 10px 5px;
+}
+.panel>.panel-footer {
+    padding-top: 5px;
+    border-top: 1px solid #e4eaec;
+}
+
+
+/*form-control*/
+.form-control {
+    height: 30px!important;
+    padding: 4px 6px !important;
+}
+label.chkArea {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 0px 0px;
+  width: max-content;
+  padding-right: 15px;
+  cursor: pointer;
+  font-weight: 400;
+}
+label.chkArea input[type="checkbox"] + span:before {
+  content:"\f14a";
+}
+label.chkArea input[type="radio"] + span:before {
+  content:"\f058";
+}
+label.chkArea span {
+  font-size: 18px;
+  color: gray;
+  margin-right: 5px;
+  font-family: "FontAwesome";
+  font-weight: 400;
+}
+.chkArea input[type="checkbox"] , .chkArea  input[type="radio"] {
+    display: none;
+}
+.chkArea input[type=checkbox]:checked + span ,
+.chkArea input[type=radio]:checked + span {
+  box-sizing: border-box;
+  color: #26b99a;
+  cursor: pointer;
+  display: block;
+  font-family: "FontAwesome";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+}
+/*button*/
+.btn-outline.btn-danger {
+    color: #ff4c52;
+    background-color: transparent;
+    border-color: #ff4c52;
+}
+.btn-outline.btn-warning {
+  color: #eb6709;
+  background-color: transparent;
+  border-color: #eb6709;
+}
+.btn-outline.btn-default {
+    color: #76838f;
+    background-color: transparent;
+    border-color: #e4eaec;
+}
+.btn-outline.btn-primary {
+    color: #3e8ef7;
+    background-color: transparent;
+    border-color: #3e8ef7;
+}
+.btn-outline.btn-success {
+    color: #11c26d;
+    background-color: transparent;
+    border-color: #11c26d;
+}
+.btn-outline.btn-info {
+    color: #0bb2d4;
+    background-color: transparent;
+    border-color: #0bb2d4;
+}
+.btn-icon, .btn.icon {
+    padding: .715rem;
+    line-height: 1em;
+}
+.btn-icon .icon {
+  margin: -1px 0 0;
+}
+.btn .icon {
+    width: 1em;
+    text-align: center;
+    line-height: inherit;
+}
+.btn-round {
+    border-radius: 1000px!important;
+}
+.btn-sm {
+    padding: .429rem;
+    font-size: .858rem;
+}
+
+/**
+extend fancy tree
+ */
+.fancytree-container {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: transparent;
+}
+.fancytree-icon {
+    color: deepskyblue;
+}
+
+/**
+extend bootstrap multi select
+ */
+.input-group-addon,
+.input-group-btn,
+.input-group .form-control {
+    display: table-cell;
+}
+.input-group-addon:not(:first-child):not(:last-child),
+.input-group-btn:not(:first-child):not(:last-child),
+.input-group .form-control:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+.input-group-addon,
+.input-group-btn {
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.input-group-addon.input-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+.input-group-addon.input-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.input-group-addon input[type="radio"],
+.input-group-addon input[type="checkbox"] {
+    margin-top: 0;
+}
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group > .btn,
+.input-group-btn:first-child > .dropdown-toggle,
+.input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:last-child > .btn-group:not(:last-child) > .btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group-addon:first-child {
+    border-right: 0;
+}
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group > .btn,
+.input-group-btn:last-child > .dropdown-toggle,
+.input-group-btn:first-child > .btn:not(:first-child),
+.input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.input-group-addon:last-child {
+    border-left: 0;
+}
+.input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+.input-group-btn > .btn {
+    position: relative;
+}
+.input-group-btn > .btn + .btn {
+    margin-left: -1px;
+}
+.input-group-btn > .btn:hover,
+.input-group-btn > .btn:focus,
+.input-group-btn > .btn:active {
+    z-index: 2;
+}
+.input-group-btn:first-child > .btn,
+.input-group-btn:first-child > .btn-group {
+    margin-right: -1px;
+}
+.input-group-btn:last-child > .btn,
+.input-group-btn:last-child > .btn-group {
+    margin-left: -1px;
+}
+.multiselect-native-select .btn-group .multiselect,
+.multiselect-native-select .btn-group {
+    width: 100%;
+}
+.multiselect-native-select .multiselect {
+    height: 30px;
+    padding-top: 0px;
+    background-color: transparent;
+    border-color: #ced4da;
+}
+.multiselect-filter .input-group {
+    width: calc(100% - 10px);
+}
+.multiselect-clear-filter {
+    height: 30px;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-remove-circle:before {
+    content: "\e088";
+}
+.glyphicon-search:before {
+    content: "\e003";
+}

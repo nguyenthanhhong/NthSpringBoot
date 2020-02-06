@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <definition name="base.definition" template="/WEB-INF/layouts/content.jsp">
+        <put-attribute name="title" value="Welcome Page" />
+        <put-attribute name="header" value="/WEB-INF/template/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/template/footer.jsp" />
+    </definition>
+
+    <definition name="home.definition" template="/WEB-INF/layouts/home_content.jsp">
+        <put-attribute name="title" value="Home Page" />
+        <put-attribute name="body" value="" />
+    </definition>
+
+    <definition name="error.definition" template="/WEB-INF/layouts/error_content.jsp">
+        <put-attribute name="title" value="Welcome Page" />
+        <put-attribute name="body" value="" />
+    </definition>
+
+    <definition name="home/*" extends="home.definition">
+        <put-attribute name="title" value="Welcome Page" />
+        <put-attribute name="body" value="/WEB-INF/jsp/home/{1}" />
+    </definition>
+
+    <definition name="setting/*" extends="base.definition">
+        <put-attribute name="title" value="Common Setting" />
+        <put-attribute name="body" value="/WEB-INF/jsp/setting/{1}" />
+    </definition>
+
+    <definition name="common/*" extends="base.definition">
+        <put-attribute name="title" value="Common Setting" />
+        <put-attribute name="body" value="/WEB-INF/jsp/common/{1}" />
+    </definition>
+
+    <definition name="ui-sample/*" extends="base.definition">
+        <put-attribute name="title" value="UI Sample" />
+        <put-attribute name="body" value="/WEB-INF/jsp/ui-sample/{1}" />
+    </definition>
+
+    <definition name="user/*" extends="base.definition">
+        <put-attribute name="title" value="User Setting" />
+        <put-attribute name="body" value="/WEB-INF/jsp/user/{1}" />
+    </definition>
+
+    <definition name="main/*" extends="base.definition">
+        <put-attribute name="title" value="Feature" />
+        <put-attribute name="body" value="/WEB-INF/jsp/main/{1}" />
+    </definition>
+
+    <definition name="error/*" extends="error.definition">
+        <put-attribute name="title" value="There are something wrong" />
+        <put-attribute name="body" value="/WEB-INF/jsp/error/{1}.jsp" />
+    </definition>
+
+</tiles-definitions>

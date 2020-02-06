@@ -1,0 +1,67 @@
+<script>
+const PAGE_INFO = {
+    DB_SOURCE: '${CURR_PAGE.DB_NM}',
+    //USER INFORMATION
+    USER_ID: '${u_userId}',
+    LANG_CD: '${u_langCd}',
+
+    //PAGE INFORMATION
+    PRG_CD: '${CURR_PAGE.PRG_CD}',
+    PRG_NAME: '${CURR_PAGE.PRG_NM}',
+    PRG_PATH: '${CURR_PAGE.PRG_URL}',
+    SCH_TERM: '${CURR_PAGE.SCH_TERM}',
+    SCH_FR_CD: '${CURR_PAGE.SCH_FR_CD}',
+    SCH_FR_DT: '${CURR_PAGE.SCH_FR_DT}',
+    SCH_TO_CD: '${CURR_PAGE.SCH_TO_CD}',
+    SCH_TO_DT: '${CURR_PAGE.SCH_TO_DT}',
+};
+const LOCAL = {
+    L_LANG_CD: '${l_langCd}',
+    L_LANG_NM: '${l_langNm}',
+    L_CURR_CD: '${l_currCd}',
+    L_CURR_NM: '${l_currNm}',
+    L_CURR_RADIX: '${l_currRadix}',
+    L_CURR_FORMAT: '${l_currFm}',
+    L_CURR_PREFIX: '${l_currPrefix}',
+    L_CURR_SUFFIX: '${l_currSuffix}',
+    L_CURR_DIGITS: '${l_currDigits}',
+    L_DATE_FORMAT: '${l_dateFm}',
+    L_DAY_FORMAT: '${l_dayFm}',
+    L_MONTH_FORMAT: '${l_monthFm}',
+    L_TIME_FORMAT: '${l_timeFm}',
+    L_ROUND_TYPE: '${l_roundCd}',
+    L_ROUND_TYPE_NM: '${l_roundNm}',
+    L_NUM_FORMAT: '${l_numFm}',
+    L_NUM_GROUP_SEPARATOR: '${l_numGroupSeparator}',
+    L_NUM_RADIX_POINT: '${l_numRadixPoint}',
+    L_NUM_DIGITS: '${l_numDigits}',
+    L_DB_DATE_FORMAT: '${l_dbDateFm}'
+};
+const FUNCTION = {
+    SELECT: PAGE_INFO.DB_SOURCE + "/search",
+    INSERT: PAGE_INFO.DB_SOURCE + "/insert",
+    UPDATE: PAGE_INFO.DB_SOURCE + "/update",
+    DELETE: PAGE_INFO.DB_SOURCE + "/delete",
+    PROCEDURE: PAGE_INFO.DB_SOURCE + "/executeProcedure",
+    SQL_SINGLE: PAGE_INFO.DB_SOURCE + "/sqlObject", //SINGLE
+    SQL_MULTI: PAGE_INFO.DB_SOURCE + "/sqlList", //MULTIPLE
+    SQL_INSERT: PAGE_INFO.DB_SOURCE + "/sqlInsert",
+    SQL_UPDATE: PAGE_INFO.DB_SOURCE + "/sqlUpdate",
+    SQL_DELETE: PAGE_INFO.DB_SOURCE + "/sqlDelete",
+    SQL_PROC: PAGE_INFO.DB_SOURCE + "/sqlCall"
+};
+
+const FUNC_NAME = {
+    SELECT: "SELECT",
+    INSERT: "INSERT",
+    UPDATE: "UPDATE",
+    DELETE: "DELETE",
+    PROCEDURE: "PROCEDURE",
+    SQL_SINGLE: "SQL_SINGLE",
+    SQL_MULTI: "SQL_MULTI",
+    SQL_INSERT: "SQL_INSERT",
+    SQL_UPDATE: "SQL_UPDATE",
+    SQL_DELETE: "SQL_DELETE",
+    SQL_PROC: "SQL_PROC"
+};
+</script>
