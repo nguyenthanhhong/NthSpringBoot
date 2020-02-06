@@ -7,6 +7,7 @@ Spring Security (login, PasswordEncode, Access permission)
 - Login by id and password
 - Encode pass in database
 - Filter permission on access every page url, every button on page
+
 Connect multi data database
 - MySQL
 - PostgreSQL
@@ -31,7 +32,7 @@ Change languages
 
 Use TagSupport to create custom component
 - Select combobox with element get from common code
-- Checkbox and combobox group with values get from common code
+- Checkbox and radio group with values get from common code
 - Common Code list that can parse to json object
 - Select combobox with element get from custom query
 
